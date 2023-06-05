@@ -1,13 +1,15 @@
 * {box-sizing:border-box}
 
 .container {
-  width: 700px;
+  width: 60%;
   position: relative;
   margin: 50px auto 10px;
 }
 
 .mySlides {
   display: none;
+  height: auto;
+  width: auto;
 }
 
 .prev, .next {
