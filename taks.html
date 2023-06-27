@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello</h1>
+    
+</body>
+<script>
+    function countOccurrences(arr) {
+  var obj = {};
+
+  arr.forEach(function (key) {
+
+    console.log(key , "keys");
+    if (obj[key]) {
+        console.log(obj[key],"obj and key");
+      obj[key]++;
+      console.log(obj,"object");
+      
+    } else {
+      obj[key] = 1;
+    }
+  });
+
+  return obj;
+}
+
+var array = [1, 2, 3, 2, 1, 3, 1, 1, 2];
+
+// var array2 = [9,9,9,99]
+var occurrences = countOccurrences(array);
+// var occurrences2 = countOccurrences(array2);
+
+console.log(occurrences);
+// console.log(occurrences2);
+// Output: { "1": 4, "2": 3, "3": 2 }
+</script>
+</html>
